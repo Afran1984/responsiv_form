@@ -12,6 +12,15 @@ Route::get('/about', function () {
     return view('home-sections.about');
 })->name('about');
 
+
+Route::get('/service', function () {
+    return view('home-sections.service');
+})->name('service');
+
+// Route::get('/service', function () {
+//     return view('home-section.service')
+// })->name('service');
+
 // Route::get('/about', [AboutController::class, 'index'])->name('about');
 
 Route::get('/regform', [ProfileController::class, 'create'])->name('profiles.create');
